@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Photography - A&P Photography</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/wedding.css">
+    <link rel="stylesheet" href="css/gallery-enhance.css">
+    <link rel="stylesheet" href="css/hero-fix.css">
+    <link rel="stylesheet" href="css/masonry-gallery.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">A&P Photography</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ring-ceremony.html">Ring Ceremony</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="wedding.html">Wedding</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pre-wedding.html">Pre-Wedding</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="model.html">Model</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#about">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="wedding-hero-section" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/wedding/wedding (11).jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="typing-effect">Wedding Photography</h1>
+                    <div class="typing-container">
+                        <p class="lead typing-effect-2">Capturing the magic of your special day</p>
+                    </div>
+                    <div class="decorator-container">
+                        <img src="images/decorator.svg" alt="Elegant Decorator" class="decorator">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Wedding Photography Section -->
+    <section class="about-wedding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="wedding-title typing-effect-3">Your Love Story Deserves to be Told</h2>
+                    <p>Your wedding day is one of the most important days of your life. Our team specializes in capturing the emotions, details, and beautiful moments that make your wedding unique.</p>
+                    <p>We blend traditional and contemporary photography styles to create timeless images that you'll cherish for generations. From getting ready moments to the last dance, we're there to document every detail.</p>
+                    <div class="wedding-features">
+                        <div class="feature">
+                            <i class="bi bi-heart"></i>
+                            <h4>Candid Emotions</h4>
+                            <p>We capture the real, unscripted moments of joy and love.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="bi bi-camera"></i>
+                            <h4>Artistic Portraits</h4>
+                            <p>Beautiful, creative portraits that showcase your love.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="bi bi-gem"></i>
+                            <h4>Detail Shots</h4>
+                            <p>We document all the little details you've carefully planned.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="wedding-image-container">
+                        <img src="images/wedding/wedding (2).jpg" alt="Wedding Photography" class="img-fluid rounded shadow" onclick="openLightbox(this)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="text-center mb-4 wedding-gallery-title">Our Wedding Gallery</h2>
+            <div class="text-center mb-5">
+                <img src="images/decorator.svg" alt="Elegant Decorator" class="decorator">
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/wedding/wedding (3).jpg" alt="Wedding Photo" class="img-fluid gallery-image" onclick="openLightbox(this)">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/wedding/wedding (4).jpg" alt="Wedding Photo" class="img-fluid gallery-image" onclick="openLightbox(this)">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/wedding/wedding (5).jpg" alt="Wedding Photo" class="img-fluid gallery-image" onclick="openLightbox(this)">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="gallery-item">
+                        <img src="images/wedding/wedding (6).jpg" alt="Wedding Photo" class="img-fluid gallery-image" onclick="openLightbox(this)">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="gallery-item">
+                        <img src="images/wedding/wedding (7).jpg" alt="Wedding Photo" class="img-fluid gallery-image" onclick="openLightbox(this)">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/wedding/wedding (8).jpg" alt="Wedding Photo" class="img-fluid gallery-image" onclick="openLightbox(this)">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/wedding/wedding (9).jpg" alt="Wedding Photo" class="img-fluid gallery-image" onclick="openLightbox(this)">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="images/wedding/wedding (10).jpg" alt="Wedding Photo" class="img-fluid gallery-image" onclick="openLightbox(this)">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="lightbox">
+                <div class="lightbox-content">
+                    <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+                    <img id="lightbox-img" class="lightbox-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Wedding Highlight Videos</h2>
+            <div class="text-center mb-5">
+                <img src="images/decorator.svg" alt="Elegant Decorator" class="decorator">
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="video-container">
+                        <video controls poster="images/wedding/wedding 5.jpg" class="img-fluid">
+                            <source src="videos/wedding-video-1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h4 class="mt-3">Wedding Day Highlights</h4>
+                        <p>A beautiful compilation of special moments from a traditional wedding ceremony.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="video-container">
+                        <video controls poster="images/wedding/wedding 8.jpg" class="img-fluid">
+                            <source src="videos/wedding-video-2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h4 class="mt-3">Wedding Reception</h4>
+                        <p>Capturing the joy and celebrations of this important day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Wedding Packages</h2>
+            <div class="text-center mb-5">
+                <img src="images/decorator.svg" alt="Elegant Decorator" class="decorator">
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3>Essential</h3>
+                            <div class="price">₹45,000</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li>6 Hours Coverage</li>
+                                <li>One Photographer</li>
+                                <li>200+ Edited Digital Images</li>
+                                <li>Online Gallery</li>
+                                <li>10 Printed Photos (8×10)</li>
+                            </ul>
+                            <a href="index.html#contact" class="btn btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="package-card featured">
+                        <div class="package-header">
+                            <h3>Premium</h3>
+                            <div class="price">₹75,000</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li>10 Hours Coverage</li>
+                                <li>Two Photographers</li>
+                                <li>400+ Edited Digital Images</li>
+                                <li>Online Gallery</li>
+                                <li>Wedding Album (30 pages)</li>
+                                <li>20 Printed Photos (8×10)</li>
+                                <li>Engagement Photoshoot</li>
+                            </ul>
+                            <a href="index.html#contact" class="btn btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="package-card">
+                        <div class="package-header">
+                            <h3>Luxury</h3>
+                            <div class="price">₹1,25,000</div>
+                        </div>
+                        <div class="package-body">
+                            <ul>
+                                <li>Full Day Coverage (12+ Hours)</li>
+                                <li>Two Photographers + Videographer</li>
+                                <li>600+ Edited Digital Images</li>
+                                <li>Online Gallery</li>
+                                <li>Premium Wedding Album (40 pages)</li>
+                                <li>30 Printed Photos (8×10)</li>
+                                <li>Engagement Photoshoot</li>
+                                <li>Wedding Highlight Video (10 min)</li>
+                                <li>Full Ceremony Video</li>
+                            </ul>
+                            <a href="index.html#contact" class="btn btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="text-center mb-5 wedding-testimonials-title">What Our Couples Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Anuvab and Pronoy captured our wedding day perfectly. The photos are beyond our expectations and truly reflect the emotions of the day."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h5>Riya & Aditya</h5>
+                            <p>Married in December 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Professional, creative, and so easy to work with. They made us feel comfortable throughout the day and delivered stunning photos."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h5>Neha & Vikrant</h5>
+                            <p>Married in October 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The attention to detail was amazing. They captured moments we didn't even notice on the day. Our wedding album is a treasure."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h5>Ananya & Rohan</h5>
+                            <p>Married in February 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta-section" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/wedding/wedding 3.jpg'); background-size: cover; background-position: center;">
+        <div class="container text-center">
+            <h2>Ready to Book Your Wedding Photography?</h2>
+            <p class="lead">Contact us today to check availability for your special date.</p>
+            <a href="index.html#contact" class="btn btn-primary btn-lg mt-3">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>A&P Photography</h4>
+                    <p>Professional photography services for all your special moments.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@anphotography.com</p>
+                    <p>Phone: +91 1234567890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2025 A&P Photography. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/single-lightbox.js"></script>
+    <script src="js/masonry-gallery.js"></script>
+    <script src="js/dynamic-gallery.js"></script>
+</body>
+</html>

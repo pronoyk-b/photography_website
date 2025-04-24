@@ -1,0 +1,328 @@
+/* Ring Ceremony Page Specific Styles */
+
+/* Hero Section */
+.ring-hero-section {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/ring-ceremony-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 70px;
+}
+
+.ring-hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/* About Ring Ceremony Section */
+.about-ring-ceremony {
+    background-color: #f9f7f4;
+    padding: 80px 0;
+}
+
+.ring-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #8e44ad; /* Changed to purple for ring ceremony theme */
+}
+
+.ring-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 10px;
+    background: url('../images/ring-ceremony-underline.svg') repeat-x;
+    background-size: contain;
+}
+
+.ring-ceremony-features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.feature {
+    flex: 1 1 33%;
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature i {
+    font-size: 2.5rem;
+    color: #9b59b6; /* Changed to lighter purple for ring ceremony theme */
+    margin-bottom: 15px;
+}
+
+.feature h4 {
+    font-size: 1.2rem;
+    color: #8e44ad; /* Changed to purple for ring ceremony theme */
+    margin-bottom: 10px;
+}
+
+.ring-ceremony-image-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ring-ceremony-image-container::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+    background: url('../images/ring-ceremony-decoration.svg') no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+.ring-ceremony-image-container::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    background: url('../images/ring-ceremony-decoration.svg') no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+/* Gallery Section */
+.gallery-section {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 250px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(142, 68, 173, 0.2); /* Changed to purple for ring ceremony theme */
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover::before {
+    opacity: 1;
+}
+
+/* Video Section */
+.video-section {
+    background-color: #f9f7f4;
+    padding: 80px 0;
+}
+
+.video-container {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.video-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.video-container video {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.video-container h4 {
+    color: #8e44ad; /* Changed to purple for ring ceremony theme */
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.testimonial-card {
+    background-color: #f9f7f4;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.testimonial-card::before {
+    content: '"';
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 5rem;
+    color: rgba(142, 68, 173, 0.1); /* Changed to purple for ring ceremony theme */
+    font-family: 'Playfair Display', serif;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-author {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-author h5 {
+    color: #8e44ad; /* Changed to purple for ring ceremony theme */
+    margin-bottom: 5px;
+}
+
+/* Packages Section */
+.packages-section {
+    background-color: #f9f7f4;
+    padding: 80px 0;
+}
+
+.package-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.package-header {
+    background-color: #8e44ad; /* Changed to purple for ring ceremony theme */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.package-header h3 {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.package-body {
+    padding: 20px;
+}
+
+.package-body ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.package-body ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.package-body ul li:before {
+    content: '✓';
+    color: #8e44ad; /* Changed to purple for ring ceremony theme */
+    margin-right: 10px;
+}
+
+.featured {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.featured .package-header {
+    background-color: #9b59b6; /* Lighter purple for featured package */
+}
+
+.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .ring-hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .feature {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .ring-hero-section {
+        height: 50vh;
+    }
+    
+    .ring-hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .gallery-item {
+        height: 200px;
+    }
+    
+    .featured {
+        transform: none;
+    }
+    
+    .featured:hover {
+        transform: translateY(-10px);
+    }
+}

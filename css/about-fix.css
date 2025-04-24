@@ -1,0 +1,66 @@
+/* About Section Improvements for Portrait Images */
+
+/* Adjust the about card to better handle portrait images */
+.about-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Increase height for portrait images and use contain instead of cover */
+.about-image-container {
+    overflow: hidden;
+    height: 400px; /* Increased height for portrait images */
+    background-color: #f9f9f9; /* Light background to make image boundaries visible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Show the entire image without cropping */
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.about-card:hover .about-image {
+    transform: scale(1.03); /* Slightly reduced scale to avoid overflow */
+}
+
+/* Content styling */
+.about-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content h3 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.about-content h4 {
+    color: #e67e22;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-image-container {
+        height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-image-container {
+        height: 300px;
+    }
+}

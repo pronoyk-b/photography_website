@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main ornamental design -->
+  <g fill="#9b59b6" opacity="0.6">
+    <path d="M50,10 C70,10 70,30 50,30 C30,30 30,10 50,10 Z"/>
+    <path d="M50,70 C70,70 70,90 50,90 C30,90 30,70 50,70 Z"/>
+    <path d="M10,50 C10,30 30,30 30,50 C30,70 10,70 10,50 Z"/>
+    <path d="M70,50 C70,30 90,30 90,50 C90,70 70,70 70,50 Z"/>
+  </g>
+  
+  <!-- Central floral design -->
+  <g fill="#8e44ad" opacity="0.8">
+    <path d="M50,30 C60,30 60,40 50,40 C40,40 40,30 50,30 Z"/>
+    <path d="M50,60 C60,60 60,70 50,70 C40,70 40,60 50,60 Z"/>
+    <path d="M30,50 C30,40 40,40 40,50 C40,60 30,60 30,50 Z"/>
+    <path d="M60,50 C60,40 70,40 70,50 C70,60 60,60 60,50 Z"/>
+  </g>
+  
+  <!-- Center ornament -->
+  <circle cx="50" cy="50" r="10" fill="#8e44ad"/>
+  <circle cx="50" cy="50" r="5" fill="#fff"/>
+  
+  <!-- Decorative swirls -->
+  <path d="M20,20 Q30,10 40,20" fill="none" stroke="#8e44ad" stroke-width="2" opacity="0.7"/>
+  <path d="M60,20 Q70,10 80,20" fill="none" stroke="#8e44ad" stroke-width="2" opacity="0.7"/>
+  <path d="M20,80 Q30,90 40,80" fill="none" stroke="#8e44ad" stroke-width="2" opacity="0.7"/>
+  <path d="M60,80 Q70,90 80,80" fill="none" stroke="#8e44ad" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Small decorative elements -->
+  <circle cx="15" cy="15" r="3" fill="#9b59b6" opacity="0.5"/>
+  <circle cx="85" cy="15" r="3" fill="#9b59b6" opacity="0.5"/>
+  <circle cx="15" cy="85" r="3" fill="#9b59b6" opacity="0.5"/>
+  <circle cx="85" cy="85" r="3" fill="#9b59b6" opacity="0.5"/>
+</svg>

@@ -1,0 +1,16 @@
+i want to create a photography website for me. 
+
+
+** things to consider 
+1. we are two photographers (Anuvab Saha as Videographer, Pronoy Kumar Biswas as Photographer)
+2. We shoot Rice ceremony, Wedding, Pre-wedding, Model
+3. for all types of photography, there should be one separate page with custom style (for Rice ceremony use a theme that can align with kids and children, for Wedding style use svg underline image kolka style, For wedding style use a style that suits prewedding aesthetic, for model photoshoot use bold style that goes with model photoshoot.)
+4. homepage should have header, footer with nav bar and hamburger style that is responsible for website's responsiveness. 
+5. in the about us section, for each of us, use a placeholder image (images folder) with animation that mimics the style of writing with short description.
+6. in the mid of the home page use slideshow (from slideshow_homepage folder's image) in landscape mode
+7. below the slideshow, there should be card type of option for each type of photography that will redirect to respective html pages for corresponding types of photography.
+8. in the home page, look and feel must be aesthetic, minimal and lucrative and eye pleasing.
+9. use html, css, javascript, bootstrap only to create this.
+10. for all type of images, use placeholder image for now.
+11. for each type of photography page, there should be 2 video section that will play a video from "videos" folder
+12. use smooth animation everywhere.
