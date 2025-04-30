@@ -83,10 +83,8 @@ function loadGalleryImages() {
     
     // Function to try loading images with different naming patterns
     function tryLoadingImages() {
-        // Try pattern with parentheses: "folder_name (1).jpg"
         let baseNames = [];
         
-        // Check for pre-wedding first (since 'wedding' is a substring of 'pre-wedding')
         if (imageFolderPath.includes('pre-wedding')) {
             baseNames = ['pre-wedding'];
         } else if (imageFolderPath.includes('ring-ceremony')) {
@@ -97,30 +95,33 @@ function loadGalleryImages() {
             baseNames = ['model'];
         }
         
-        // Try to load up to 30 images for each base name
+        // List of model photos to exclude
+        const excludedModelPhotos = [12, 16, 17, 18, 19, 20, 21];
+        
         baseNames.forEach(baseName => {
             for (let i = 1; i <= 30; i++) {
+                // Skip excluded model photos
+                if (baseName === 'model' && excludedModelPhotos.includes(i)) continue;
+                
                 imageExtensions.forEach(ext => {
-                    // Try pattern with parentheses: "base_name (i).ext"
                     const imagePath = `${imageFolderPath}${baseName} (${i})${ext}`;
                     
                     checkImageExists(imagePath, function(exists) {
                         if (exists) {
                             const galleryItem = createGalleryItem(imagePath, imageCount);
-                            if (galleryItem) { // Only append if an item was created (not for masonry)
+                            if (galleryItem) {
                                 galleryContainer.appendChild(galleryItem);
                             }
                             imageCount++;
                         }
                     });
                     
-                    // Also try pattern without parentheses: "base_name i.ext"
                     const alternateImagePath = `${imageFolderPath}${baseName} ${i}${ext}`;
                     
                     checkImageExists(alternateImagePath, function(exists) {
                         if (exists) {
                             const galleryItem = createGalleryItem(alternateImagePath, imageCount);
-                            if (galleryItem) { // Only append if an item was created (not for masonry)
+                            if (galleryItem) {
                                 galleryContainer.appendChild(galleryItem);
                             }
                             imageCount++;
