@@ -125,6 +125,7 @@ section {
         blink-caret .75s step-end 8 forwards;
     display: inline-block;
     max-width: 100%;
+    word-break: break-word;
 }
 
 .typing-container {
@@ -221,19 +222,31 @@ section {
 }
 
 @media (max-width: 576px) {
+    .hero-section {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 0 50px;
+    }
+
     .typing-effect {
         font-size: 1.8rem;
-        animation: typing 3.5s steps(20, end), blink-caret .75s step-end infinite;
-        margin-bottom: 0.5rem;
+        animation: none;
+        white-space: normal;
+        border-right: none;
+        width: 100%;
+        margin-bottom: 1rem;
     }
     
     .typing-container {
-        min-height: 5em;
+        min-height: auto;
     }
     
     .typing-effect-2 {
-        font-size: 0.8rem;
-        animation: typing2 4s steps(25, end) 3.5s forwards, blink-caret .75s step-end infinite;
+        font-size: 0.9rem;
+        animation: none;
+        white-space: normal;
+        border-right: none;
+        width: 100%;
     }
 }
 

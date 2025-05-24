@@ -168,14 +168,57 @@ function initAnimations() {
     setTimeout(autoSlideshow, 5000);
 }
 
-// Form submission
+// Form submission with WhatsApp redirect
 document.addEventListener('DOMContentLoaded', function() {
-    const contactForm = document.querySelector('.contact-form');
+    const whatsappContactForm = document.getElementById('whatsappContactForm');
+    if (whatsappContactForm) {
+        whatsappContactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value.trim();
+            
+            // Validate form
+            if (!name || !phone || !service || !message) {
+                alert('Please fill out all fields');
+                return;
+            }
+            
+            // Format message for WhatsApp
+            const whatsappPhone = '+911234567890'; // Replace with your actual WhatsApp number
+            const formattedMessage = `Hello, my name is ${name}. I'm interested in your ${service} services. ${message}`;
+            const encodedMessage = encodeURIComponent(formattedMessage);
+            
+            // Create WhatsApp URL
+            const whatsappUrl = `https://wa.me/${whatsappPhone}?text=${encodedMessage}`;
+            
+            // Show sending message
+            const submitBtn = whatsappContactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Opening WhatsApp...';
+            
+            // Redirect to WhatsApp after a short delay
+            setTimeout(function() {
+                window.open(whatsappUrl, '_blank');
+                
+                // Reset form
+                whatsappContactForm.reset();
+                submitBtn.textContent = originalText;
+            }, 1000);
+        });
+    }
+});
+
+// Legacy form handler for backward compatibility
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.querySelector('.contact-form:not(#whatsappContactForm)');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            // Here you would typically send the form data to a server
-            // For now, we'll just show a success message
+            // Legacy form handling
             const formElements = contactForm.elements;
             for (let i = 0; i < formElements.length; i++) {
                 formElements[i].disabled = true;

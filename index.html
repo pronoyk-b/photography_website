@@ -14,7 +14,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">A&P Photography</a>
+                    <a class="navbar-brand" href="index.html"><img src="logo/logo.png" alt="A&P Photography Logo" style="max-height: 40px;"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -188,26 +188,26 @@
             <h2 class="text-center mb-5">Contact Us</h2>
             <div class="row">
                 <div class="col-md-6 mx-auto">
-                    <form class="contact-form">
+                    <form id="whatsappContactForm" class="contact-form">
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <input type="tel" id="phone" class="form-control" placeholder="Your Phone Number" required>
                         </div>
                         <div class="mb-3">
-                            <select class="form-select">
-                                <option selected>Select Service</option>
-                                <option value="ring-ceremony">Ring Ceremony</option>
-                                <option value="wedding">Wedding</option>
-                                <option value="pre-wedding">Pre-Wedding</option>
-                                <option value="model">Model Photoshoot</option>
+                            <select id="service" class="form-select" required>
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="Ring Ceremony">Ring Ceremony</option>
+                                <option value="Wedding">Wedding</option>
+                                <option value="Pre-Wedding">Pre-Wedding</option>
+                                <option value="Model Photoshoot">Model Photoshoot</option>
                             </select>
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            <textarea id="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        <button type="submit" class="btn btn-primary w-100">Send Message via WhatsApp</button>
                     </form>
                 </div>
             </div>
@@ -219,7 +219,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h4>A&P Photography</h4>
+                    <h4>ShaperShadow</h4>
                     <p>Professional photography services for all your special moments.</p>
                 </div>
                 <div class="col-md-4">
@@ -233,18 +233,18 @@
                 </div>
                 <div class="col-md-4">
                     <h4>Contact Info</h4>
-                    <p>Email: info@anphotography.com</p>
+                    <p>Email: shapershadow@gmail.com</p>
                     <p>Phone: +91 1234567890</p>
                     <div class="social-icons">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.threads.net" target="_blank"><i class="bi bi-threads"></i></a>
                     </div>
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col-md-12 text-center">
-                    <p>&copy; 2025 A&P Photography. All rights reserved.</p>
+                    <p>&copy; 2025 ShaperShadow. All rights reserved.</p>
                 </div>
             </div>
         </div>
